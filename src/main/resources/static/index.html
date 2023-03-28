@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro de Produtos</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Controle Refinado | jQuery Essentials | UpInside</title>
+<link href="css/style.css" rel='stylesheet' type='text/css'>
+<link
+	href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'
+	rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<form action="" name="produtos">
+
+		<label> <span class="field">Categoria:</span> <!--               <input type="text" name="categoria" class="categoria" placeholder="Melhor E-mail:"/> -->
+			<select name="categoria" class="categoria">
+				<option selected>Selecione uma Categoria</option>
+				<option value="CAMISA_POLO">CAMISA_POLO</option>
+				<option value="CAMISETAS_BORDADAS">CAMISETAS_BORDADAS</option>
+				<option value="CAMISETA_SIMPLES">CAMISETA_SIMPLES</option>
+				<option value="CAMISAS_SOCIAL">CAMISAS_SOCIAL</option>
+		</select>
+		</label> 
+		<label> 
+		<span class="field">Cor:</span> <!--  <input type="text" name="cor" class="cor" placeholder="Melhor E-mail:"/> -->
+			<select name="cor" class="cor">
+				<option selected>Selecione Uma Cor</option>
+				<option value="AZUL">AZUL</option>
+				<option value="AMARELO">AMARELO</option>
+				<option value="VERMELHO">VERMELHO</option>
+				<option value="PRETO">PRETO</option>
+		</select>
+		</label> <label> <span class="field">Departamento</span> <!--                 <input type="text" name="departamento" class="departamento" placeholder="Melhor E-mail:"/> -->
+			<select name="departamento" class="departamento">
+				<option value="Selecione Um Tamanho" selected>Selecione Um
+					Tamanho</option>
+				<option value="MASCULINO">MASCULINO</option>
+				<option value="FEMININO">FEMININO</option>
+				<option value="INFANTIL">INFANTIL</option>
+		</select>
+		</label> <label> <span class="field">Descricao:</span> <input
+			type="text" name="descricao" class="descricao"
+			placeholder="Melhor E-mail:" />
+		</label> <label> <span class="field">Quantidade:</span> <input
+			type="text" name="quantidade" class="quantidade"
+			placeholder="Melhor E-mail:" />
+		</label> <label> <span class="field">Sku:</span> <input type="text"
+			name="sku" class="sku" placeholder="Melhor E-mail:" />
+		</label> <label> <span class="field">Tamanho:</span> <!--                 <input type="text" name="tamanho" class="tamanho" placeholder="Melhor E-mail:"/>             -->
+			<select name="tamanho" class="tamanho">
+				<option value="Selecione Um Tamanho" selected>Selecione Um
+					Tamanho</option>
+				<option value="PEQUENO">PEQUENO</option>
+				<option value="MEDIO">MEDIO</option>
+				<option value="GRANDE">GRANDE</option>
+		</select>
+		</label> <label> <span class="field">Valor:</span> <input type="text"
+			name="valor" class="valor" placeholder="Melhor E-mail:" />
+		</label>
+		<button>Cadastrar-se</button>
+
+	</form>
+	</br>
+	<!--           <button type="submit" class="teste">novo</button> -->
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Categoria</th>
+					<th>cor</th>
+					<th>Departamento</th>
+					<th>Descricao</th>
+					<th>Quantidade</th>
+					<th>Sku</th>
+					<th>Tamanho</th>
+					<th>Valor</th>
+					<th>Editar</th>
+					<th>Excluir</th>
+				</tr>
+			</thead>
+			<tbody class="lista">
+
+			</tbody>
+		</table>
+	</div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="refinado.js"></script>
+</body>
+</html>
